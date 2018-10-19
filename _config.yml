@@ -43,6 +43,6 @@ plugins:
 #   - vendor/ruby/
 
 disqus:
-  shortname: princerk-github-io.disqus.com/admin
+  shortname: princerk-github-io
 
 show_excerpts: true
