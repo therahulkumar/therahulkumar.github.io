@@ -43,6 +43,6 @@ plugins:
 #   - vendor/ruby/
 
 disqus:
-  shortname: owlfool
+  shortname: princerk-github-io.disqus.com/admin
 
 show_excerpts: true
