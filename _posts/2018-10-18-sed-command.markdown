@@ -4,6 +4,7 @@ title:  "sed command"
 date:   2018-10-18 18:23:45 +0530
 categories: unix/linux commands
 permalink: /commands/sed.html
+comments: true
 ---
 
 ## sed -- stream editor
