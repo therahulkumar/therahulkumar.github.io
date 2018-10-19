@@ -1,17 +1,15 @@
 ---
 layout: post
-title:  "sed command"
+title:  "Sed: Unix/linux stream editor command"
 date:   2018-10-18 18:23:45 +0530
 categories: unix/linux commands
 permalink: /commands/sed.html
 comments: true
 ---
 
-## sed -- stream editor
-
 `sed` command is used in unix/linux like operating system for editing the file or stream and it does a lot of functions
-like find and replace, insertion, deletion but it is mainly used for substitution of word. you can used `sed` to substitue
-words without opening the file. it scans the file or stream line by line and executes command on each line.
+like find and replace, insertion, deletion. it scans the file or stream line by line and executes command on each line. 
+In this post I am exploring some useful sed command with examples.
 
 ## Syntax
 
@@ -112,6 +110,176 @@ python is easy learn python, python follows oo principles
 python uses simple syntax, python uses simple syntax
 ```
 
-# 7. 
+# 7. Print only modified lines
+```cmd
+$sed -n '2,$ s/java/python/gp' rk.txt
+```
+Above command will replace 'java' with 'python' from second line to last line and print only the modified lines in which
+the substitution performed. look for `-n' flag  
+**output:**
+```cmd
+python is easy learn python, python follows oo principles
+python uses simple syntax, python uses simple syntax
+```
+
+# 8. Print modified lines twice
+```cmd
+$sed '2,$ s/java/python/gp' rk.txt
+```
+Above command will replace 'java' with 'python' from second line to last line and print twice the modified lines in which
+the substitution performed.   
+**output:**
+```log
+java is a programming language, java has a good developer community  
+python is easy learn python, python follows oo principles
+python is easy learn python, python follows oo principles
+python uses simple syntax, python uses simple syntax
+python uses simple syntax, python uses simple syntax
+```
+
+# 9. Deleting nth line
+```cmd
+$sed '2d' rk.txt
+```
+Above command will delete 2nd line from rk.txt  
+**output:**
+```log
+java is a programming language, java has a good developer community  
+java uses simple syntax, python uses simple syntax
+```
+
+# 10. Deleting lines in a range
+```cmd
+$sed '1,2d' rk.txt
+```
+Above command will delete lines from 1 to 2.  
+**output:**
+```cmd
+java uses simple syntax, python uses simple syntax
+```
+
+```cmd
+$sed '2,$d' rk.txt
+```
+Above command will delete lines from 2 to last.  
+**output:**
+```log
+java is a programming language, java has a good developer community
+```
+
+# 11. Insert a blank line after each line
+```cmd
+$sed G rk.txt
+```
+**output:**
+```log
+java is a programming language, java has a good developer community  
+
+java is easy learn java, java follows oo principles
+
+java uses simple syntax, python uses simple syntax
+
+
+```
+For inserting two blank lines use following command
+```cmd
+$sed 'G;G' rk.txt
+```
+# 12. View/Print lines in a range
+```cmd
+$sed -n '2,3p' rk.txt
+```
+Above command will print 2nd to 3rd line from rk.txt  
+**output:**
+```log
+java is easy learn java, java follows oo principles
+java uses simple syntax, python uses simple syntax
+```
+For print nth line use following
+```cmd
+$sed -n '2p' rk.txt
+```
+Above command will print 2nd line from rk.txt  
+**output:**
+```log
+java is easy learn java, java follows oo principles
+```
+
+# 13. View/Print lines except a given range
+```cmd
+$sed '2,3d' rk.txt
+```
+Above command will print all lines from file rk.txt except lines from 2nd to 3rd  
+**output:**
+```log
+java is a programming language, java has a good developer community
+```
+
+# 14. View/Print non-consecutive lines/range from a file
+```cmd
+$sed -n -e '1p' -e '3p' rk.txt
+```
+Above command will print 1st and 3rd line from file rk.txt  
+**output:**
+```log
+java is a programming language, java has a good developer community  
+java uses simple syntax, python uses simple syntax
+```
+
+Notice the `-e` flag, using this flag we can append multiple editing command and each command will be executed in
+sequence
+
+# 15. Inplace editing of a file
+```cmd
+$sed -i 's/java/python/g' rk.txt
+```
+Above command will do the substitution inplace directly in rk.txt file, notice the `-i' flag, without this flag the 
+edit operation does not affect the original file.
+
+# 16. Inplace editing of a file with backup
+```cmd
+$sed -i '.original' 's/java/python/g' rk.txt
+```
+Above command will make changes in original file rk.txt and will make a backup of file with '.original' extension,
+After executing the above command there will be two files rk.txt and rk.txt.original. This is recommended way of 
+doing inplace editing, in case if we do any mistake we will have a backup file.  
+
+# 17. Regular expression: print line which matches a pattern
+```cmd
+$sed -n '/programming/ p' rk.txt 
+```
+Above command will print all the lines which has 'programming' in it.  
+**output:**
+```log
+java is a programming language, java has a good developer community
+```
+# 18. Delete lines which matches a pattern
+```cmd
+sed  '/programming/ d' rk.txt
+```
+Above command will delete all the lines which has 'programming'.  
+**output:**
+```log
+java is easy learn java, java follows oo principles
+java uses simple syntax, python uses simple syntax
+```
+
+# 19. Replace in lines which matches given pattern
+```cmd
+$sed '/programming/ s/java/python/g' rk.txt
+```
+Above command will replace 'java' with 'python' in each line which has 'programming' in it.  
+**output:**
+```log
+python is a programming language, python has a good developer community  
+java is easy learn java, java follows oo principles
+java uses simple syntax, python uses simple syntax
+```
+
+
+
+
+
+
 
 
