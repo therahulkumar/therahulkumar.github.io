@@ -16,7 +16,7 @@ In this post I am exploring some useful sed command with examples.
 ```cmd
 sed options [script] [inputfile]
 ```
-
+Make `man` your friend, for reference or in doubt use the command `$man sed` 
 ## Examples
 
 Consider the text file `rk.txt` as input with the following content
