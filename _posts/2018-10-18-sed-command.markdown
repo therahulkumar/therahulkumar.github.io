@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Sed command: Unix/linux stream editor command"
+title:  "Sed command in  Unix/Linux with examples"
 date:   2018-10-18 18:23:45 +0530
-categories: unix/linux commands
+categories: unix-linux-commands
 permalink: /unix-linux-commands/sed.html
 comments: true
+navname: "Sed command"
 ---
 
 `sed` command is used in unix/linux like operating system for editing the file or stream and it does a lot of functions

@@ -48,3 +48,7 @@ disqus:
   shortname: princerk-github-io
 
 show_excerpts: true
+
+header_pages:
+  - unix-linux-commands.md
+  - about.md

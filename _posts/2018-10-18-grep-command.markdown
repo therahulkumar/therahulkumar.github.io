@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Grep command: Unix/linux command to search a pattern"
+title:  "Grep command in Unix/Linux with examples"
 date:   2018-10-18 18:23:45 +0530
-categories: unix/linux commands
+categories: unix-linux-commands
 permalink: /unix-linux-commands/grep.html
 comments: true
+navname: "Grep command"
 ---
 
 `grep` command is used in unix/linux like operating system for searching a pattern in files. It searches for a pattern 

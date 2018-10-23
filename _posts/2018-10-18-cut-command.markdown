@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Cut command: Unix/linux command to cut out selected portions"
+title:  "Cut command in Unix/Linux with examples"
 date:   2018-10-18 18:23:45 +0530
-categories: unix/linux commands
+categories: unix-linux-commands
 permalink: /unix-linux-commands/cut.html
 comments: true
+navname: "Cut command"
 ---
 
 `cut` command is used to cut out a seleted portions of each line from a file or standard output based on some given 

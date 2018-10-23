@@ -19,6 +19,19 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="PageNavigation">
+      {% if page.next.url and page.categories == page.next.categories %}
+      <a class="next" href="{{page.next.url}}">&laquo; {{page.next.navname}}</a>
+      {% endif %}
+
+      {% if page.previous.url and page.categories == page.previous.categories and page.next.url and page.categories == page.next.categories %}
+      |
+      {% endif %}
+      {% if page.previous.url and page.categories == page.previous.categories %}
+      <a class="prev" href="{{page.previous.url}}">{{page.previous.navname}} &raquo;</a>
+      {% endif %}
+  </div>
+
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}
