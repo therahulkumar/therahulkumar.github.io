@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Sed: Unix/linux stream editor command"
+title:  "Sed command: Unix/linux stream editor command"
 date:   2018-10-18 18:23:45 +0530
 categories: unix/linux commands
-permalink: /commands/sed.html
+permalink: /unix-linux-commands/sed.html
 comments: true
 ---
 

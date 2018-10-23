@@ -24,6 +24,7 @@ url: "https://therakum.github.io" # the base hostname & protocol for your site, 
 twitter_username: therakum
 linkedin_username: princerk
 instagram_username: therakum
+rss: rss
 
 # Build settings
 markdown: kramdown
