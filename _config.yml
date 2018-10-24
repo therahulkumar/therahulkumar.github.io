@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Geekspath
-email: rahul@geekspath.com
+email: contact@geekspath.com
 author: Rahul Kumar
 description: >- # this means to ignore newlines until "baseurl:"
   This is my tech blog on unix/linux, data structures and algorithms, programming languages c/c++, java, python and some
