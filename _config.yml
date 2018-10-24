@@ -52,3 +52,5 @@ show_excerpts: true
 header_pages:
   - unix-linux-commands.md
   - about.md
+
+google_analytics: UA-128062183-1
