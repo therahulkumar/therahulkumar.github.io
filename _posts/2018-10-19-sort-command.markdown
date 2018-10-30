@@ -40,7 +40,7 @@ Rahul
 rahul
 ```
 
-By default sort uses entire line for comparison and sorts based on lexicographical order.
+By default sort uses entire line for comparison and sorts based on lexicographical order (number < alphabet and Uppercase < Lowercase).
 
 # 2. Sort  in reverse order
 `-r` flag is used to sort in reverse order
