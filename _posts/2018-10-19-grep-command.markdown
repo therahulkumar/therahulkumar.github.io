@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Grep command in Unix/Linux with examples"
-date:   2018-10-18 18:23:45 +0530
+date:   2018-10-19 18:23:45 +0530
 categories: unix-linux-commands
 permalink: /unix-linux-commands/grep.html
 comments: true

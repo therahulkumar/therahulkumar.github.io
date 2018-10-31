@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sed command in  Unix/Linux with examples"
-date:   2018-10-18 18:23:45 +0530
+date:   2018-10-20 18:23:45 +0530
 categories: unix-linux-commands
 permalink: /unix-linux-commands/sed.html
 comments: true
