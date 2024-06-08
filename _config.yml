@@ -13,17 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Geekspath
-email: contact@geekspath.com
+title: Rahul Kumar
+email: <>
 author: Rahul Kumar
 description: >- # this means to ignore newlines until "baseurl:"
   This is my tech blog on unix/linux, data structures and algorithms, programming languages c/c++, java, python and some
   random tech articles.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://geekspath.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: therakum
-linkedin_username: princerk
-instagram_username: therakum
 rss: rss
 
 # Build settings
@@ -45,8 +41,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-disqus:
-  shortname: geekspath-com
+
 
 show_excerpts: true
 
